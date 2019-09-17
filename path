@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+(
+ IFS=":"
+ path=( ${1:-"${PATH}"} )
+
+ printf '%s\n' ${path[@]}
+)
